@@ -63,8 +63,10 @@ class Bank {
     
     func transfer(accountNumber1: Int, accountNumber2: Int, amount: Double ) {
         
+        if self.accounts.keys.contains(accountNumber1) && self.accounts.keys.contains(accountNumber2)  {
         let customerAccountNumber1 = self.accounts[accountNumber1]
         let customerAccountNumber2 = self.accounts[accountNumber2]
+        
         
         if var customerAccountNumber1 = customerAccountNumber1 {
             customerAccountNumber1.balance -= amount
@@ -80,8 +82,9 @@ class Bank {
 
     }
     
-}
+ }
 
+}
 struct Account {
     var customer: String
     var accountNumber: Int
