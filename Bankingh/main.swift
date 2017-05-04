@@ -7,7 +7,7 @@ let hannesChecking = chase.createAccount(customer: "Hannes", balance: 1000, acco
 let jeffChecking = chase.createAccount(customer: "Jeff", balance: 1000, accountType: .checking)
 let hannesSavings = chase.createAccount(customer: "Hannes", balance: 1000, accountType: .savings)
 
-chase.transfer(accountNumber1: hannesSavings, accountNumber2: 13, amount: 243)
+chase.transfer(accountNumber1: hannesSavings, accountNumber2: 12, amount: 243)
 
 dump(chase)
 
